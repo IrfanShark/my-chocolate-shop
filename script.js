@@ -1,3 +1,4 @@
+/* Music */
 function toggleMusic() {
     const bgMusic = document.getElementById("bgMusic");
     const musicBtn = document.getElementById("musicBtn");
@@ -12,6 +13,7 @@ function toggleMusic() {
 }
 
 
+/* Calories Counter*/
 function calculateCalories(baseValue, pieces) {
     return baseValue * pieces;
 }
@@ -55,3 +57,13 @@ document.addEventListener("DOMContentLoaded", function () {
         chocoType.onchange = updateNutrition;
     }
 });
+
+/* For Alert */
+
+function submitEnquiry(event) {
+    event.preventDefault();
+
+    alert("Your enquiry has been submitted successfully!");
+
+    event.target.reset();
+}
