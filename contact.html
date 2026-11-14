@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +7,13 @@
     <title>LoColate | Order & Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <nav class="navbar">
         <div class="logo">🍫 LoColate</div>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Our Chocolates</a></li>
             <li><a href="scaler.html">Calorie Calculator</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -19,41 +21,95 @@
         </ul>
     </nav>
 
+    <header class="banner">
+        <img src="contact.jpg" alt="contact Banner">
+    </header>
 
     <main class="container">
-        <h2 class="section-title">Order & Get In Touch</h2>
-        
-        <div class="contact-wrapper">
-            
-            <div class="contact-info">
+        <h2>Order & Get In Touch</h2>
+
+        <div>
+
+            <div>
                 <h3>Visit Our Boutique</h3>
                 <p>Have a question about custom gift boxes, bulk orders, or our seasonal flavors? Reach out to our team!</p>
-                
-                <div class="info-item">
+
+                <div>
                     <strong>📍 Address:</strong>
                     <p>Lot 12, Jalan Sri Saujana, 43400 Serdang, Selangor</p>
                 </div>
 
-                <div class="info-item">
+                <div>
                     <strong>📞 Phone / WhatsApp:</strong>
                     <p>+60 12-345 6789</p>
                 </div>
 
-                <div class="info-item">
+                <div>
                     <strong>✉️ Email:</strong>
                     <p>hello@locolate.com.my</p>
                 </div>
 
-                <div class="info-item">
+                <div>
                     <strong>🕒 Opening Hours:</strong>
-                    <p>Tuesday - Sunday: 10:00 AM - 8:00 PM<br>(Closed on Mondays)</p>
+
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                        <tr>
+                            <th style="border: 1px solid black; padding: 8px;">Day</th>
+                            <th style="border: 1px solid black; padding: 8px;">Opening Hours</th>
+                        </tr>
+
+                        <tr>
+                            <td style="border: 1px solid black; padding: 8px;">Tuesday - Sunday</td>
+                            <td style="border: 1px solid black; padding: 8px;">10:00 AM - 8:00 PM</td>
+                        </tr>
+
+                        <tr>
+                            <td style="border: 1px solid black; padding: 8px;">Monday</td>
+                            <td style="border: 1px solid black; padding: 8px;">Closed</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
 
+            <div>
+                <h3>Send Us an Enquiry</h3>
+
+                <form onsubmit="submitEnquiry(event)">
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <br><br>
+
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <br><br>
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    <br><br>
+
+                    <label for="product">Product Interest:</label><br>
+                    <select id="product" name="product">
+                        <option value="">Select a product</option>
+                        <option value="chocolate-cake">Chocolate Cake</option>
+                        <option value="chocolate-croissant">Chocolate Croissant</option>
+                        <option value="chocolate-box">Chocolate Gift Box</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your enquiry here..." required></textarea>
+                    <br><br>
+
+                    <button type="submit">Submit Enquiry</button>
+                    <button type="reset">Clear Form</button>
+                </form>
+            </div>
 
         </div>
     </main>
-    
+
+    <script src="script.js"></script>
 
     <footer>
         <p>&copy; 2026 LoColate. All rights reserved.</p>
