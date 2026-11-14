@@ -32,26 +32,6 @@
     color: #4E342E;
 }
 
-.hero {
-    background: linear-gradient(rgba(46, 26, 22, 0.85), rgba(46, 26, 22, 0.85)), 
-                #4E342E;
-    color: #FFF8E7;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero h1 {
-    font-size: 2.8rem;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto 25px;
-    color: #EFEBE9;
-}
-
 .btn {
     background-color: #D84315;
     color: white;
