@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoColate | Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🍫 LoColate</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="menu.html">Our Chocolates</a></li>
+            <li><a href="scaler.html">Calorie Calculator</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <header class="banner">
+        <img src="scaler.jpg" alt="Scaler Banner">
+    </header>
+
+    <main class="recipe-container">
+        <h2 class="main-title">Chocolate Calorie & Nutrition Calculator</h2>
+        <p class="recipe-desc">Indulging mindfully? Select your chocolate combination type and enter how many pieces you're enjoying to calculate the exact calories and nutrition.</p>
+
+        <div class="servings-box">
+            <label for="chocoType"><strong>Chocolate Type:</strong></label>
+            <select id="chocoType">
+                <option value="dark">70% Dark Chocolate (55 kcal / piece)</option>
+                <option value="milk">Creamy Milk Chocolate (60 kcal / piece)</option>
+                <option value="white">Velvet White Chocolate (65 kcal / piece)</option>
+            </select>
+
+            <label for="piecesInput"><strong>Pieces:</strong></label>
+            <input type="number" id="piecesInput" value="1" min="1" max="50">
+        </div>
+
+        <div class="recipe-card">
+            <h3>Nutrition Breakdown (<span id="pieceCountDisplay">1</span> Piece)</h3>
+            <ul class="ingredient-list">
+                <li><span id="calories">55</span> kcal <span class="ingredient">Total Calories</span></li>
+                <li><span id="weight">10</span> g <span class="ingredient">Total Weight</span></li>
+                <li><span id="sugar">3.0</span> g <span class="ingredient">Sugar</span></li>
+                <li><span id="fat">4.2</span> g <span class="ingredient">Total Fat</span></li>
+                <li><span id="protein">0.8</span> g <span class="ingredient">Protein</span></li>
+            </ul>
+        </div>
+
+        <div class="instructions-card">
+            <h3>Chocolatier's Tasting Tips</h3>
+            <ol>
+                <li><strong>Portion Guide:</strong> One standard chocolate square weighs approximately 10 grams.</li>
+                <li><strong>Savor Slowly:</strong> Let the piece melt on your tongue rather than chewing to release the full cocoa butter aroma.</li>
+                <li><strong>Daily Balance:</strong> 2 to 3 pieces of 70% dark chocolate provide antioxidants without excess sugar.</li>
+            </ol>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Velvet Bean Chocolatier. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

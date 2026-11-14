@@ -1,0 +1,222 @@
+/* Home Page Style */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFB300;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #FFF8E7;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #FFF8E7;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #4E342E;
+}
+
+.hero {
+    background: linear-gradient(rgba(46, 26, 22, 0.85), rgba(46, 26, 22, 0.85)), 
+                #4E342E;
+    color: #FFF8E7;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 25px;
+    color: #EFEBE9;
+}
+
+.btn {
+    background-color: #D84315;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#musicBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #5c3524;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #BF360C;
+}
+
+#musicBtn:hover {
+    background-color: #8b5a3c;
+    transform: scale(1.05);
+}
+
+.specialty-section {
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.content-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-side {
+  width: 45%;
+  text-align: center;
+}
+
+.text-side h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.text-side p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+.image-side {
+  width: 45%;
+}
+
+.image-side img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+    background-color: #3E2723;
+    color: #D7CCC8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+/* Menu Page Style*/
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2rem;
+    color: #4E342E;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #4E342E;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #6D4C41;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-weight: 600;
+    color: #D84315;
+}
+
+/* About Us Page */
+
+.banner {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: center;
+}
+
+/* Scaler */
+.servings-box {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.servings-box select {
+    padding: 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
